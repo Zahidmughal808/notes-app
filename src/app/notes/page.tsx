@@ -7,6 +7,10 @@ import { useRouter } from "next/navigation";
 export default function Notes({ notes }: any) {
   const router = useRouter();
 
+  if (!notes || notes.length === 0) {
+    return <p>No notes found</p>;
+  }
+
   const handleDelete = async (id: string) => {
     await removeNote(id);
     router.refresh();
