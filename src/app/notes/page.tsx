@@ -43,6 +43,9 @@ export default function Notes({ notes }: any) {
                   <p className="text-sm text-gray-500 mt-1 line-clamp-2">
                     {note.content}
                   </p>
+                  <span className="text-xs text-gray-400 mt-2 block">
+                    {new Date(note.createdAt).toLocaleString()}
+                  </span>
                 </div>
                 <button
                   title="Delete Note"
