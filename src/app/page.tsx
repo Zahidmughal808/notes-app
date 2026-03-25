@@ -2,7 +2,8 @@ import AddNoteForm from "@/components/addNoteForm";
 import Notes from "@/app/notes/page";
 import { getNotes } from "@/lib/helper";
 
-export const revalidate = 30;
+//export const revalidate = 30;
+export const dynamic = "force-dynamic";
 
 export default function Home() {
   const notes = getNotes() || [];
