@@ -1,5 +1,5 @@
 import { notes } from "@/lib/mock-data/notes";
-import { INote } from "../types/note";
+import { INote } from "@/lib/types/note";
 import { v4 as uuidv4 } from "uuid";
 
 export function getNotes(): INote[] {
