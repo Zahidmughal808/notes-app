@@ -3,7 +3,7 @@ import { INote } from "../types/note";
 import { v4 as uuidv4 } from "uuid";
 
 export function getNotes(): INote[] {
-  return notes;
+  return notes ?? [];
 }
 
 export function getNote(id: string) {
